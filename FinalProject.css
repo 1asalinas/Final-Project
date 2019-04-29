@@ -1,0 +1,479 @@
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    header{
+        width: 100%;
+        height: 300px;
+        background-image: url("https://i.pinimg.com/474x/95/3a/3a/953a3a44d0e7c18f66a2481e2dc9707b--hd-video-video-game.jpg");
+        margin: auto;
+        margin-top: 0;
+    }
+    header > div > h1{
+        text-align: center;
+        color: aqua;
+        margin-top: 0px;
+    }
+    header > div{
+        height: 50px;
+        width: 50%;
+        margin: auto;
+        margin-top: 0px;
+    }
+    nav{
+        color: aqua;
+        display: flex;
+        margin: auto;
+        margin-top: 0px;
+        padding: 1px;
+        text-align: center;
+    }
+    nav > a{
+        flex: 1;
+        color: red;
+    }
+    a:hover{ 
+        color: indigo;
+    }
+    div > form{
+        width: 50%;
+        margin-left: 33%;
+        margin-top: 175px;
+    }
+    input{
+        width:230px;
+    }
+    section{
+        display: flex;
+    }
+    
+    
+    .grey{
+        background-color: gray;
+    }
+    .blue{
+        background-color: blue;
+    }
+    .red{
+        background-color: red;
+    }
+    .green{
+        background-color: green;
+    }
+    .black{
+        background-color: black;
+    
+    }
+    .trans{
+        background-color: transparent 
+    }
+    .small{
+        height:100px;
+        width:500px;
+    }
+    .big{
+        width:500px;
+        height:300px;
+    }
+    .big2{
+        height:100px;
+        width:100%;
+    }
+    .big3{
+        width: 400px;
+        padding: 8px;
+        border: 8px;
+        border-radius: 4px;
+        background-color: white;
+        float: left;
+        margin: 10px auto;
+    }
+    .small2{
+        height:200px;
+    
+    }
+    .half_l{
+        float: left;
+        width: 50%;
+    }
+    .half_r{
+        float: right;
+        width: 50%;
+    }
+    .third{
+        float: left;
+        width: 33.33%;
+    }
+    .quarter{
+        float: left;
+        width:25%;
+    }
+    .three_quarters{
+        float: right;
+        width:75%;
+    }
+    .two_thirds{
+        float: right;
+        width: 66.67%;
+    }
+    
+    
+    
+    
+    
+    .imgsize{
+        width: 400px;
+        height: auto;
+    }
+    .leftad{
+        float: left;
+        height: auto;
+        width: 200px;
+        padding: 5px;
+        background-color: grey;
+        border-radius: 6px;
+        flex: 2;
+    }
+    main{
+        height: auto;
+        width: 600px;
+        padding: 5px;
+        background-color: aliceblue;
+        border-radius: 6px;
+        margin: auto;
+        float: left;
+        flex: 7;
+    }
+    .rightad{
+        float: left;
+        height: auto;
+        width: 200px;
+        padding: 5px;
+        background-color: grey;  
+        border-radius: 6px;  
+        flex: 1;
+    }
+    .small4{
+        height:100px;
+        width:150px;
+        background-color: white;
+        border: 8px;
+        margin: 10px auto;
+    }
+
+
+.Toggle{
+
+  .box{
+    margin-top:8px;
+    border:2px solid black;
+  }
+  
+  .quarter_box{
+    float:left;
+    height: 200px;
+    width: 25%;
+  }
+  
+  .half_box{
+    float:left;
+    height: 200px;
+    width: 50%;
+  }
+  
+  .full_box{
+    float:left;
+    height: 200px;
+    width: 100%;
+  }
+  
+  
+  
+  /*Green Gradient*/
+  
+  .green25{
+      color: rgb(255,255,255);
+      background-color: rgb(0,64,0);
+  }
+  .green50{
+      color: rgb(192,192,192);
+      background-color: rgb(0,128,0);
+  }
+  .green75{
+      color: rgb(128,128,128);
+      background-color: rgb(0,192,0);
+  }
+  .green100{
+      color: rgb(0,0,0);
+      background-color: rgb(0,255,0);
+  }
+  
+}
+
+.WebStarterPack{
+
+    html{
+        height: 100%;
+    }
+
+    .grey{
+        background-color: gray;
+    }
+    .blue{
+        background-color: blue;
+    }
+    .red{
+        background-color: red;
+    }
+    .green{
+        background-color: green;
+    }
+    .black{
+        background-color: black;
+
+    }
+    .trans{
+        background-color: transparent 
+    }
+    .small{
+        height:100px;
+        width:500px;
+    }
+    .big{
+        width:500px;
+        height:300px;
+    }
+    .big2{
+        height:100px;
+        width:100%;
+    }
+    .big3{
+        width: 400px;
+        padding: 8px;
+        border: 8px;
+        border-radius: 4px;
+        background-color: white;
+        float: center;
+        margin: 10px auto;
+    }
+    .small2{
+        height:200px;
+
+    }
+    .half_l{
+        float: left;
+        width: 50%;
+    }
+    .half_r{
+        float: right;
+        width: 50%;
+    }
+    .third{
+        float: left;
+        width: 33.33%;
+    }
+    .quarter{
+        float: left;
+        width:25%;
+    }
+    .three_quarters{
+        float: right;
+        width:75%;
+    }
+    .two_thirds{
+        float: right;
+        width: 66.67%;
+    }
+
+
+
+
+
+    .imgsize{
+        width: 400px;
+        height: auto;
+    }
+    .leftad{
+        float: left;
+        height: auto;
+        width: 200px;
+        padding: 5px;
+        background-color: black;
+        border-radius: 6px;
+    }
+    main{
+        height: auto;
+        width: 600px;
+        padding: 5px;
+        background-color: aliceblue;
+        border-radius: 6px;
+        margin: auto;
+    }
+    .rightad{
+        float: right;
+        height: auto;
+        width: 200px;
+        padding: 5px;
+        background-color: black;  
+        border-radius: 6px;  
+    }
+    .small4{
+        height:100px;
+        width:150px;
+        background-color: white;
+        border: 8px;
+        margin: 10px auto;
+    }
+}
+
+.NameCompany{
+    header{
+        height: 125px;
+        background-color: aquamarine;
+    }
+    
+    p{
+        font-weight: 600;
+    }
+    
+    output{
+        font-weight: 700;
+        width: 100px;
+    }
+    
+    .option{
+        margin: 24px 0;
+        padding: 4px;
+    }
+    .title{
+        text-align: center;
+    }
+    
+    .price{
+        font-size: 30px;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    #cart{
+        padding: 16px;
+        border: 2px solid rgb(0, 200, 200);
+        width: 700px;
+        margin: 0 auto;
+    }
+    
+    #cart > select,
+    #cart > input
+    #cart > output{
+        width: 75px;
+        margin-right: 16px;
+    }
+    
+}
