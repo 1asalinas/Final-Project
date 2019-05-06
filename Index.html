@@ -4,64 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="FinalProject.css">
+    <link rel="stylesheet" href="slideshow.css">
     <title>Ski & Snowboard Rental</title>
 </head>
 
-    <body>
-        <header> 
-            <h1 class="title">A Ski & Snowboard Rental</h1>
-            <h3 class="title">All your Winter needs</h3> 
-        </header>
+<body>
+ <header> 
+  <h1 class="title TopTitle">A Ski & Snowboard Rental</h1>
+  <h3 class="title">All your Winter needs</h3> 
+ </header>
        
-            </head>
-            <body>
-            
+<body>
+  <section>
+      <div class="slideshow-container">
 
-            <div class="slideshow-container">
-            
-            <div class="mySlides fade">
-              <img src="https://www.wallpaperup.com/uploads/wallpapers/2014/12/01/536230/7c841b880b2942d4367a894732e6a168.jpg" style="width:100%" style="height:200px">
-            </div>
-            
-            <div class="mySlides fade">
-              <img src="http://3.bp.blogspot.com/_cENOUGFPWzI/SaQimXz7fbI/AAAAAAAAAD0/ejuTxGKZ7S4/s320/wii-fit-snowboarding.jpg" style="width:100%" style="height:200px">
-            </div>
-            
-            <div class="mySlides fade">
-              <img src="https://image.redbull.com/rbcom/010/2015-04-04/1331715137394_2/0010/1/1500/1000/1/marcel-hirscher-colours-making-of.jpg" style="width:100%" style="height:200px">
-            </div>
-            
-            </div>
-            <br>
-            
-            <div style="text-align:center">
-              <span class="dot"></span> 
-              <span class="dot"></span> 
-              <span class="dot"></span> 
-            </div>
-            
-            <script>
-            var slideIndex = 0;
-            showSlides();
-            
-            function showSlides() {
-              var i;
-              var slides = document.getElementsByClassName("mySlides");
-              var dots = document.getElementsByClassName("dot");
-              for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-              }
-              slideIndex++;
-              if (slideIndex > slides.length) {slideIndex = 1}    
-              for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-              }
-              slides[slideIndex-1].style.display = "block";  
-              dots[slideIndex-1].className += " active";
-              setTimeout(showSlides, 2000); // Change image every 2 seconds
-            }
-            </script>
+          <div class="mySlides fade">
+              <img class="slideImg" src="https://www.wallpaperup.com/uploads/wallpapers/2014/12/01/536230/7c841b880b2942d4367a894732e6a168.jpg" >
+          </div>
+          
+          <div class="mySlides fade">
+              <img class="slideImg" src="https://www.thredbo.com.au/wp-content/uploads/2018/03/07.21.17-Powder-1W6A0690-1500x900.jpg" >
+          </div>
+          
+          <div class="mySlides fade">
+              <img class="slideImg" src="https://image.redbull.com/rbcom/010/2015-04-04/1331715137394_2/0010/1/1500/1000/1/marcel-hirscher-colours-making-of.jpg" >
+          </div>
+          
+      </div>
+          <br>
+          
+          <div class="dots">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+          </div>
+          
+  </section>
+
+  <main>
+    <div>
+      <a class="hoverclick" href="Skiing.html"><h1>Skiing</h1></a>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div>
+      <a class="hoverclick" href="Snowboarding.html"><h1>Snowboarding</h1></a>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div></div>
+  </main>
+
+  <script>
+  var slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+  </script>
             
     </body>
        
