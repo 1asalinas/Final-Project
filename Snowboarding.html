@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="description.css">
+    <title>Document</title>
+</head>
+<body>
+    <header> 
+        <h1 class="title TopTitle">Snowboard Rental</h1>
+        <h3 class="title">All Your Snowboarding Needs!!</h3> 
+    </header>
+
+    <img src="Skiii.jpg" alt="">
+    <img src="SkiiiW.jpg" alt="">
+
+    <div class="bttn">
+      <button id="myBtn">Ready to Order</button>
+    </div>
+
+    <div id="myModal" class="modal">
+
+    
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="custom-select" style="width:200px;">
+            <select>
+              <option value="0">Select car:</option>
+              <option value="1">Audi</option>
+              <option value="2">BMW</option>
+              <option value="3">Citroen</option>
+              <option value="4">Ford</option>
+              <option value="5">Honda</option>
+              <option value="6">Jaguar</option>
+              <option value="7">Land Rover</option>
+              <option value="8">Mercedes</option>
+              <option value="9">Mini</option>
+              <option value="10">Nissan</option>
+              <option value="11">Toyota</option>
+              <option value="12">Volvo</option>
+            </select>
+          </div>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+      var modal = document.getElementById('myModal');
+
+      // Get the button that opens the modal
+      var btn = document.getElementById("myBtn");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks on the button, open the modal 
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+  </script>
+  <script>
+  .custom-select {
+  position: relative;
+  font-family: Arial;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color: DodgerBlue;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+  </script>                
+</body>
+</html>
