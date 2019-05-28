@@ -13,9 +13,8 @@
         <h3 class="title">All Your Snowboarding Needs!!</h3> 
     </header>
 
-    <img src="Skiii.jpg" alt="">
-    <img src="SkiiiW.jpg" alt="">
-
+    <img class="center" src="Skiii.jpg" alt="">
+    
     <div class="bttn">
       <button id="myBtn">Ready to Order</button>
     </div>
@@ -25,23 +24,63 @@
     
       <div class="modal-content">
         <span class="close">&times;</span>
+        <br>
         <div class="custom-select" style="width:200px;">
+          
+          <div class="leftmodal">
+            
             <select>
-              <option value="0">Select car:</option>
-              <option value="1">Audi</option>
-              <option value="2">BMW</option>
-              <option value="3">Citroen</option>
-              <option value="4">Ford</option>
-              <option value="5">Honda</option>
-              <option value="6">Jaguar</option>
-              <option value="7">Land Rover</option>
-              <option value="8">Mercedes</option>
-              <option value="9">Mini</option>
-              <option value="10">Nissan</option>
-              <option value="11">Toyota</option>
-              <option value="12">Volvo</option>
+              <option value="0">Expert</option>
+              <option value="1">134</option>
+              <option value="2">146</option>
+              <option value="3">159</option>
+              <option value="4">166</option>
+              <option value="5">170</option>
+              <option value="6">177</option>
+              <option value="7">184</option>
+              <option value="8">191</option>
             </select>
+            <select>
+              <option value="0">Intermediate</option>
+              <option value="1">124</option>
+              <option value="2">136</option>
+              <option value="3">149</option>
+              <option value="4">156</option>
+              <option value="5">160</option>
+              <option value="6">167</option>
+              <option value="7">174</option>
+              <option value="8">181</option>
+            </select>
+          
           </div>
+
+          <div class="rightmodal">
+            
+            <select>
+              <option value="0">Expert</option>
+              <option value="1">149</option>
+              <option value="2">152</option>
+              <option value="3">153</option>
+              <option value="4">163</option>
+              <option value="5">166</option>
+              <option value="6">170</option>
+              <option value="7">173</option>
+              <option value="8">180</option>
+            </select>
+            <select>
+              <option value="0">Intermediate</option>
+              <option value="1">139</option>
+              <option value="2">142</option>
+              <option value="3">146</option>
+              <option value="4">153</option>
+              <option value="5">156</option>
+              <option value="6">160</option>
+              <option value="7">163</option>
+              <option value="8">171</option>
+            </select>
+          
+          </div>
+        </div>
       </div>
 
     </div>
@@ -85,65 +124,6 @@
         }
       }
   </script>
-  <script>
-  .custom-select {
-  position: relative;
-  font-family: Arial;
-}
-
-.custom-select select {
-  display: none; /*hide original SELECT element: */
-}
-
-.select-selected {
-  background-color: DodgerBlue;
-}
-
-/* Style the arrow inside the select element: */
-.select-selected:after {
-  position: absolute;
-  content: "";
-  top: 14px;
-  right: 10px;
-  width: 0;
-  height: 0;
-  border: 6px solid transparent;
-  border-color: #fff transparent transparent transparent;
-}
-
-/* Point the arrow upwards when the select box is open (active): */
-.select-selected.select-arrow-active:after {
-  border-color: transparent transparent #fff transparent;
-  top: 7px;
-}
-
-/* style the items (options), including the selected item: */
-.select-items div,.select-selected {
-  color: #ffffff;
-  padding: 8px 16px;
-  border: 1px solid transparent;
-  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
-  cursor: pointer;
-}
-
-/* Style items (options): */
-.select-items {
-  position: absolute;
-  background-color: DodgerBlue;
-  top: 100%;
-  left: 0;
-  right: 0;
-  z-index: 99;
-}
-
-/* Hide the items when the select box is closed: */
-.select-hide {
-  display: none;
-}
-
-.select-items div:hover, .same-as-selected {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-  </script>                
+              
 </body>
 </html>
